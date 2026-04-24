@@ -11,22 +11,78 @@ namespace Laboratorio_progra_3
         class Prestamo
 
         {
-            private int codigo;
+            private string codigo;
+            private string nombre;
+            private int carnet;
+            private string carrera;
+            private string equipo;
+            private int cantidad;
+            private string estado;
+
+            public string Codigo
+
+            {
+                get
+
+                {
+                    return codigo;
+
+                }
+
+                set
+
+                {
+
+                    if(value.Length<=5)
+
+                    {
+
+                        Console.WriteLine("El código debe tener almenos 6 carácteres");
+
+                    }
+
+                    else
+                    {
+
+                        Console.WriteLine("Código valido");
+
+                    }
+
+                }
+
+
+            }
+
+            public string Nombre
+
+            {
+                get
+
+                {
+                    return nombre;
+
+                }
+
+                set
+
+                {
+                    if(value.Length<3)
+
+                    {
+                        Console.WriteLine("El nombre debe tener almenos 3 carácteres");
+
+
+                    }
+
+                }
 
 
 
-                
+            }
 
 
 
 
-
-
-        }
-
-        class Estudiante
-
-        {
 
 
 
